@@ -1,0 +1,28 @@
+Simple Google Omaha server implementation. 
+Forked from https://github.com/crystalnix/omaha-server
++ added Sparkle (mac) feed management
+Copyright (C) 2011 Crystalnix <vgachkaylo@crystalnix.com>
+
+Developed for Python 2.6.6.
+May work on newer versions of Python.
+
+Depends on:
+    twistd python framework
+    pyOpenSSL
+    mysql-python
+
+Launch:
+    $ twistd -ny server.tac
+    Then go to https://localhost:8083/service/admin to use
+    the administration interface.
+
+Comments:
+    You should add your privkey.pem file and server_chain.pem
+    file to the cert directory. Change the line in chained_ssl.py
+    file if you wish to use a single certificate for SSL,
+    not a certificate chain file:
+
+    FROM: ctx.use_certificate_chain_file(self.certificateChainFileName)
+    TO: ctx.use_certificate_file(self.certificateChainFileName)
+
+See COPYING for license info.
