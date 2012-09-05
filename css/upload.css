@@ -1,0 +1,111 @@
+/*
+   This file is part of omaha-server.
+
+   omaha-server is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   omaha-server is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with omaha-server.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body { font-family: Verdana, Arial, sans-serif; font-size: 90%;	}
+h1, h2, h3, h4 { margin-top: 0px; }
+div.row { margin-bottom: 10px; }
+*:focus{ outline:none; }
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clear { clear: both; }
+
+h1 {
+  width: 780px;
+  margin: 10px auto;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-box-shadow:0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+
+    width: 740px;
+    margin: 20px auto;
+    background-image: -moz-linear-gradient(top, #ffffff,#f2f2f2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2));
+}
+
+input {
+    border:1px solid #ccc;
+    font-size: 13pt;
+    padding: 5px 10px 5px 10px;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type=button] {
+    background-image: -moz-linear-gradient(top, #ffffff, #dfdfdf);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfdfdf));
+}
+
+
+input:focus {
+    -webkit-box-shadow:0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 5px #ccc;
+
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#fileToUpload, #newVersion, #fromVersion { width: 378px; }
+
+#progressIndicator { font-size: 10pt; }
+
+#fileInfo
+{
+    font-size: 10pt;
+    font-style: italic;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+#progressBar
+{
+    height: 14px;
+    border: 1px solid #cccccc;
+    display: none;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    background-image: -moz-linear-gradient(top, #66cc00, #4b9500);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));
+}
+
+#uploadResponse {
+    margin-top: 10px;
+    padding: 20px;
+    overflow: hidden;
+    display: none;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    background-image: -moz-linear-gradient(top, #ff9900, #c77801);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9900), to(#c77801));
+}
+
+#release_notes_text {
+  height: 400px;
+}

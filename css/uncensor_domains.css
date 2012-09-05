@@ -1,0 +1,23 @@
+#domains {
+  width: 500px;
+  border: 1px solid #ccc;
+}
+#domains th {
+  text-align: left;
+}
+#banner {
+  border: 1px solid #ccf;
+  padding: 10px;
+  font-weight: bold;
+}
+.even-row {
+  background-color: #eef;
+}
+
+#domains th, #domains td {
+  padding: 3px 5px;
+}
+
+#domains thead {
+  background-color: #ccc;
+}

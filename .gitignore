@@ -1,0 +1,15 @@
+bitpop/
+*.json
+*.log
+*.pyc
+cert/*
+!cert/README
+.idea/
+*.tgz
+*.tar.gz
+*.tar.bz2
+*.zip
+*.rar
+*.7z
+dsa_priv.pem
+mac_active.txt
